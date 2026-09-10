@@ -1,4 +1,4 @@
-const API_URL = 'https://xt2nct7kx7.execute-api.ap-south-1.amazonaws.com'
+const API_URL = import.meta.env.VITE_BACKEND_API_URL
 
 async function parseResponse(response) {
   const data = await response.json().catch(() => ({}))
